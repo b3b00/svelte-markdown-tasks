@@ -26,7 +26,7 @@
     
     {#if task}
         <li>
-            <span><input type="checkbox" checked={checked} disabled style="padding-right: 15px; display:inline"/><span>{@html text}</span></span>        
+            <span><input type="checkbox" checked={checked} disabled style="margin-right: 15px; display:inline"/><span>{@html text}</span></span>        
         </li>
     {:else}
         <li>{text}</li>
