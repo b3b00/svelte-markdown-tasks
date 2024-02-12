@@ -17,6 +17,7 @@
 	let content = `**toto**
 - [ ] todo
 - [X] done
+- [X] **formated task**
 - [ ] nested tasks
     - [X] sub task #1
     - [ ] sub task #2
