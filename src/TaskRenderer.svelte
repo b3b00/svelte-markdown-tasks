@@ -1,13 +1,13 @@
 <script lang="ts">
-
-    import {onMount} from 'svelte';
     
+    import {onMount} from 'svelte';
+
     export let text: string;
     
     export let task: boolean;
     
     export let checked: boolean;
-    
+
     let id: string;
     
     let  hash = async (message: string) => {
@@ -26,7 +26,7 @@
     
     {#if task}
         <li>
-            <span><input type="checkbox" checked={checked} disabled style="margin-right: 15px; display:inline"/><span>{@html text}</span></span>        
+            <span><input type="checkbox" id={id} checked={checked} disabled style="margin-right: 15px; display:inline"/><slot></slot></span>        
         </li>
     {:else}
         <li>{text}</li>
